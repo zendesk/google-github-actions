@@ -1,7 +1,6 @@
 # `setup-gcloud` GitHub Action
 
-Configures the [Google Cloud SDK][sdk] in the GitHub Actions environment. The Google Cloud SDK includes both the [gcloud][gcloud] and
-[gsutil][gsutil] binaries.
+Configures the [Google Cloud SDK][sdk] in the GitHub Actions environment. The Google Cloud SDK includes the [gcloud][gcloud] binary.
 
 Or integrate natively with other Google Cloud GitHub Actions:
 
@@ -131,7 +130,7 @@ authenticate via the following options:
 ### Workload Identity Federation (preferred)
 
 **⚠️ You must use the Cloud SDK version 390.0.0 or later to authenticate the
-`bq` and `gsutil` tools.**
+`bq` tool.**
 
 ```yaml
 jobs:
@@ -258,7 +257,6 @@ explicitly updating your version number. Note that we only publish `MAJOR` and
 [sdk]: https://cloud.google.com/sdk/
 [gcloud]: https://cloud.google.com/sdk/gcloud/
 [gcloud-credentials]: https://cloud.google.com/docs/authentication/gcloud#gcloud-credentials
-[gsutil]: https://cloud.google.com/storage/docs/gsutil
 [sa-iam-docs]: https://cloud.google.com/iam/docs/service-accounts
 [sa]: https://cloud.google.com/iam/docs/creating-managing-service-accounts
 [wif]: https://cloud.google.com/iam/docs/workload-identity-federation
